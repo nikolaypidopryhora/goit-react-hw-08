@@ -1,0 +1,9 @@
+.listEl {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.listItem {
+  width: 100%;
+}

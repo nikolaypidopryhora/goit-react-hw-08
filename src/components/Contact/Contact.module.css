@@ -1,0 +1,24 @@
+.dataLine {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.dataLine p {
+  padding-left: 5px;
+}
+
+.deleteBtn {
+  margin: 20px 10px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 350px;
+  padding-left: 10px;
+}

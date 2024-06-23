@@ -1,0 +1,31 @@
+span {
+  display: block;
+  color: red;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 15px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  height: 30px;
+}
+
+.button {
+  width: 150px;
+}
