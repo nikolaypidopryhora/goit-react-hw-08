@@ -16,3 +16,12 @@ span {
 .button {
   width: 150px;
 }
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}

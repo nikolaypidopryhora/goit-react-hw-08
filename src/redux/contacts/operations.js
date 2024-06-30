@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchAll, createContact, delContact } from "../api";
+import { fetchAll, createContact, delContact } from "../../api";
+import toast, { Toaster } from "react-hot-toast";
 
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
