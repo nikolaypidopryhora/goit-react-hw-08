@@ -43,12 +43,12 @@ export const loginApi = async (data) => {
 };
 
 export const logoutApi = async () => {
-  await axios.post("/users/logout");
+  await axios.post("users/logout");
   clearAuthHeader();
 };
 
 export const refreshUserApi = async (persistedToken) => {
-  const response = await axios.get("users/current");
   setAuthHeader(persistedToken);
+  const response = await axios.get("users/current");
   return response.data;
 };
