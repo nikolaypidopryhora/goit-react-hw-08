@@ -4,16 +4,16 @@ import { number } from "yup";
 const filterSlice = createSlice({
   name: "filters",
   initialState: {
-    value: "",
+    name: "",
   },
   reducers: {
     changeFilter: (state, action) => {
-      state.value = action.payload;
+      state.name = action.payload;
     },
     prepare(value) {
       return {
         payload: {
-          value,
+          name,
         },
       };
     },

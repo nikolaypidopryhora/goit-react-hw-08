@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { lazy, useEffect } from "react";
-import { fetchContacts } from "../../redux/contacts/operations";
+import { refreshUser } from "../../redux/auth/operations";
 import { selectIsRefreshing } from "../../redux/auth/selectors";
 import { Layout } from "../Layout";
 import { Route, Routes } from "react-router-dom";
@@ -19,7 +19,7 @@ export default function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshUser());
   }, [dispatch]);
 
   return isRefreshing ? (
